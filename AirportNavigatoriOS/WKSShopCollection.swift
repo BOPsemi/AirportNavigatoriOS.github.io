@@ -46,7 +46,7 @@ class WKSShopCollection: UICollectionViewController,
         imageview?.alpha = 0
         UIView.beginAnimations("fadeIn", context: nil)
         UIView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
-        UIView.setAnimationDuration(0.3)
+        UIView.setAnimationDuration(0.5)
         imageview?.alpha = 1
         UIView.commitAnimations()
     }
