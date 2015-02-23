@@ -12,6 +12,13 @@
 		B55F24A71A871E370040C4AA /* WKSNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F24A51A871E370040C4AA /* WKSNotificationInfo.swift */; };
 		B55F24B61A8763550040C4AA /* WKSShopCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F24B51A8763550040C4AA /* WKSShopCollection.swift */; };
 		B55F24B71A8763550040C4AA /* WKSShopCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F24B51A8763550040C4AA /* WKSShopCollection.swift */; };
+		B56211F01A9A299C00981784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C483B31A838E9600CCBFED /* AppDelegate.swift */; };
+		B56211FC1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B56211FA1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld */; };
+		B56211FD1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B56211FA1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld */; };
+		B562120C1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B562120B1A9B67A500981784 /* WKSBookedAirportShop.swift */; };
+		B562120D1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B562120B1A9B67A500981784 /* WKSBookedAirportShop.swift */; };
+		B562120F1A9B70C600981784 /* WKSRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B562120E1A9B70C600981784 /* WKSRecordController.swift */; };
+		B56212101A9B70C600981784 /* WKSRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B562120E1A9B70C600981784 /* WKSRecordController.swift */; };
 		B581569C1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581569B1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift */; };
 		B581569D1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581569B1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift */; };
 		B59BDDBC1A8902CD00D7E32C /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BDDBB1A8902CD00D7E32C /* ShopDetailViewController.swift */; };
@@ -133,6 +140,9 @@
 		B5045C451A9A0DDA005FB2B5 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		B55F24A51A871E370040C4AA /* WKSNotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSNotificationInfo.swift; sourceTree = "<group>"; };
 		B55F24B51A8763550040C4AA /* WKSShopCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSShopCollection.swift; sourceTree = "<group>"; };
+		B56211FB1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WKSBookedAirportShop.xcdatamodel; sourceTree = "<group>"; };
+		B562120B1A9B67A500981784 /* WKSBookedAirportShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSBookedAirportShop.swift; sourceTree = "<group>"; };
+		B562120E1A9B70C600981784 /* WKSRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSRecordController.swift; sourceTree = "<group>"; };
 		B581569B1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSAirportShopItemController.swift; sourceTree = "<group>"; };
 		B59BDDBB1A8902CD00D7E32C /* ShopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		B59BDDC51A8A496B00D7E32C /* WKSSelectedAirportShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSSelectedAirportShop.swift; sourceTree = "<group>"; };
@@ -284,6 +294,7 @@
 				B5FF482E1A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift */,
 				B5A441EB1A876B07004795A1 /* WKSAirportShopController.swift */,
 				B581569B1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift */,
+				B562120E1A9B70C600981784 /* WKSRecordController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +306,8 @@
 				B5FF482B1A83B21200A34A68 /* WKSAirportTerminal.swift */,
 				B5A4423C1A8788F0004795A1 /* WKSAirportShop.swift */,
 				B59BDDC51A8A496B00D7E32C /* WKSSelectedAirportShop.swift */,
+				B56211FA1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld */,
+				B562120B1A9B67A500981784 /* WKSBookedAirportShop.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -493,11 +506,14 @@
 				B5FF48221A839A0000A34A68 /* WKSAirport.swift in Sources */,
 				B59BDDBC1A8902CD00D7E32C /* ShopDetailViewController.swift in Sources */,
 				B5A442141A8778C0004795A1 /* WKSServerInfo.swift in Sources */,
+				B562120F1A9B70C600981784 /* WKSRecordController.swift in Sources */,
 				B5A4423D1A8788F0004795A1 /* WKSAirportShop.swift in Sources */,
+				B56211FC1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */,
 				B5C483D51A83926500CCBFED /* WKSAirportListMaker.swift in Sources */,
 				B5FF482F1A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift in Sources */,
 				B55F24B61A8763550040C4AA /* WKSShopCollection.swift in Sources */,
 				B5C483B41A838E9600CCBFED /* AppDelegate.swift in Sources */,
+				B562120C1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56211F01A9A299C00981784 /* AppDelegate.swift in Sources */,
 				B581569D1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift in Sources */,
 				B5FF48231A839A0000A34A68 /* WKSAirport.swift in Sources */,
 				B59BDDD21A8CE1CB00D7E32C /* WKSAirportShopItemTable.swift in Sources */,
@@ -518,11 +535,14 @@
 				B5FF482A1A83AF8500A34A68 /* WKSViewIndicator.swift in Sources */,
 				B5FF482D1A83B21200A34A68 /* WKSAirportTerminal.swift in Sources */,
 				B5C483D61A83926500CCBFED /* WKSAirportListMaker.swift in Sources */,
+				B56212101A9B70C600981784 /* WKSRecordController.swift in Sources */,
 				B59BDDC71A8A496B00D7E32C /* WKSSelectedAirportShop.swift in Sources */,
+				B56211FD1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */,
 				B59BDDCA1A8B96FC00D7E32C /* WKSViewLayout.swift in Sources */,
 				B59BDDBD1A8902CD00D7E32C /* ShopDetailViewController.swift in Sources */,
 				B5C483CA1A838E9600CCBFED /* AirportNavigatoriOSTests.swift in Sources */,
 				B5FF48301A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift in Sources */,
+				B562120D1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +738,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B56211FA1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B56211FB1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodel */,
+			);
+			currentVersion = B56211FB1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodel */;
+			path = WKSBookedAirportShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5C483A61A838E9600CCBFED /* Project object */;
 }
