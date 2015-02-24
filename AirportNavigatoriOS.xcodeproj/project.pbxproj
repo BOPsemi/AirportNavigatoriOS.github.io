@@ -44,6 +44,8 @@
 		B5C483CA1A838E9600CCBFED /* AirportNavigatoriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C483C91A838E9600CCBFED /* AirportNavigatoriOSTests.swift */; };
 		B5C483D51A83926500CCBFED /* WKSAirportListMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C483D41A83926500CCBFED /* WKSAirportListMaker.swift */; };
 		B5C483D61A83926500CCBFED /* WKSAirportListMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C483D41A83926500CCBFED /* WKSAirportListMaker.swift */; };
+		B5F51C991A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */; };
+		B5F51C9A1A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */; };
 		B5FF481B1A8393DC00A34A68 /* Airport.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481A1A8393DC00A34A68 /* Airport.plist */; };
 		B5FF481C1A8393DC00A34A68 /* Airport.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481A1A8393DC00A34A68 /* Airport.plist */; };
 		B5FF481E1A8393E800A34A68 /* AirportTerminal.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481D1A8393E800A34A68 /* AirportTerminal.plist */; };
@@ -162,6 +164,7 @@
 		B5C483C81A838E9600CCBFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C483C91A838E9600CCBFED /* AirportNavigatoriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportNavigatoriOSTests.swift; sourceTree = "<group>"; };
 		B5C483D41A83926500CCBFED /* WKSAirportListMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSAirportListMaker.swift; sourceTree = "<group>"; };
+		B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSBookedAirportShopViewController.swift; sourceTree = "<group>"; };
 		B5FF481A1A8393DC00A34A68 /* Airport.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Airport.plist; sourceTree = "<group>"; };
 		B5FF481D1A8393E800A34A68 /* AirportTerminal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirportTerminal.plist; sourceTree = "<group>"; };
 		B5FF48211A839A0000A34A68 /* WKSAirport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSAirport.swift; sourceTree = "<group>"; };
@@ -319,6 +322,7 @@
 				B55F24B51A8763550040C4AA /* WKSShopCollection.swift */,
 				B59BDDBB1A8902CD00D7E32C /* ShopDetailViewController.swift */,
 				B59BDDD01A8CE1CB00D7E32C /* WKSAirportShopItemTable.swift */,
+				B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -506,6 +510,7 @@
 				B5A442141A8778C0004795A1 /* WKSServerInfo.swift in Sources */,
 				B562120F1A9B70C600981784 /* WKSRecordController.swift in Sources */,
 				B5A4423D1A8788F0004795A1 /* WKSAirportShop.swift in Sources */,
+				B5F51C991A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */,
 				B56211FC1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */,
 				B5C483D51A83926500CCBFED /* WKSAirportListMaker.swift in Sources */,
 				B5FF482F1A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift in Sources */,
@@ -535,6 +540,7 @@
 				B5C483D61A83926500CCBFED /* WKSAirportListMaker.swift in Sources */,
 				B56212101A9B70C600981784 /* WKSRecordController.swift in Sources */,
 				B59BDDC71A8A496B00D7E32C /* WKSSelectedAirportShop.swift in Sources */,
+				B5F51C9A1A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */,
 				B56211FD1A9B4F8700981784 /* WKSBookedAirportShop.xcdatamodeld in Sources */,
 				B59BDDCA1A8B96FC00D7E32C /* WKSViewLayout.swift in Sources */,
 				B59BDDBD1A8902CD00D7E32C /* ShopDetailViewController.swift in Sources */,

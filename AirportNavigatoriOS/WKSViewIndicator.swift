@@ -17,3 +17,10 @@ enum WKSCollectionCell: Int {
     case Comment = 203
     case Floor = 204
 }
+
+enum WKSBookedTableCell: Int {
+    case ImageView = 301
+    case ShopName = 302
+    case AirportName = 303
+    case Floor = 304
+}

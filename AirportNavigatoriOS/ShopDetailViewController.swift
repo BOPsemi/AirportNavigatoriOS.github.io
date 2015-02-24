@@ -102,42 +102,37 @@ class ShopDetailViewController: UIViewController {
         }
     }
     
-    // MARK: Search data
-    private func fetchAirportShopInDB(model: WKSSelectedAirportShop) {
-        // initialize database
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        if let context = appDelegate.managedObjectContext {
-            let entityDescription = NSEntityDescription.entityForName("WKSBookedAirportShop", inManagedObjectContext: context)
-            
-            // make request
-            let request = NSFetchRequest()
-            request.entity = entityDescription
-            
-            // make prediction phrase
-            let shopname = model.shop!.name
-            let pred = NSPredicate(format: "name=%@", shopname)
-            request.predicate = pred
-            
-            // execute fetch request
-            var error: NSError? = nil
-            if var results = context.executeFetchRequest(request, error: &error){
-                for obj in results {
-                    let model = obj as WKSBookedAirportShop
-                    println(model.name)
-                }
-            }
-        }
-        
-    }
-    
     // MARK: did clicked Close Button
     @IBAction func didClickedCloseButton(sender: AnyObject) {
-        // find obj
-        //saveAirportShopInDB(airportShop!)
-        fetchAirportShopInDB(airportShop!)
         
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            // bookmark switch-on
+            if self.bookmark {
+                // setup record object
+                let record = WKSRecordController(entityName: "WKSBookedAirportShop")
+                let objs = record.findEntity(self.airportShop?.shop?.name)
+                
+                if objs.count == 0 { // not exist in database
+                    
+                    // create new entity
+                    let entity = record.createEntity()
+                    let imageData = UIImageJPEGRepresentation(self.airportShop?.image, 1.0)
+                    
+                    entity?.name = self.airportShop!.shop!.name
+                    entity?.uuid = self.airportShop!.shop!.uuid
+                    entity?.floor = self.airportShop!.shop!.floor
+                    entity?.comment = self.airportShop!.shop!.comment
+                    entity?.airport = self.airportShop!.shop!.airportname
+                    entity?.imageData = imageData
+                    entity?.items = self.airportShop!.items
+                    
+                    if let obj: WKSBookedAirportShop! = entity {
+                        // record.saveEntity()
+                        println("Saving")
+                    }
+                }
+            }
+        })
     }
     
     // MARK: View
