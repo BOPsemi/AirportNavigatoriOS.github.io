@@ -30,7 +30,24 @@ class WKSRecordController: NSObject {
         
     }
     
-    // MARK: Methods
+    // MARK: execute fetch request
+    private func executeFetch(fetchrequest: NSFetchRequest) -> [WKSBookedAirportShop]?{
+        var stack = [WKSBookedAirportShop]()
+        var error: NSError? = nil
+        
+        if var objs = context?.executeFetchRequest(fetchrequest, error: &error) {
+            for obj in objs {
+                let object = obj as WKSBookedAirportShop
+                
+                // stack find object
+                stack.append(object)
+            }
+        }
+        
+        return stack
+    }
+    
+    // MARK: Create Entity
     func createEntity() -> WKSBookedAirportShop? {
         // entity
         var entity: WKSBookedAirportShop?
@@ -51,11 +68,30 @@ class WKSRecordController: NSObject {
         return entity
     }
     
-    // MARK: Search data
+    // MARK: fetch all objects
+    func findAllEntity() -> [WKSBookedAirportShop] {
+        // stack of fetched objects
+        var findObjects = [WKSBookedAirportShop]()
+        
+        // fetch
+        if let context = self.context {
+            let entityDescription = NSEntityDescription.entityForName(entityname!, inManagedObjectContext: context)
+            
+            // make request
+            let request = NSFetchRequest()
+            request.entity = entityDescription
+            
+            // execute fetch objects
+            findObjects = executeFetch(request)!
+        }
+        
+        return findObjects
+    }
+    
+    // MARK: fetch objects by keyword
     func findEntity(keyword: String?) -> [WKSBookedAirportShop]{
         
-        
-        // stack of fetched object
+        // stack of fetched objects
         var findObjects = [WKSBookedAirportShop]()
         
         // fetch
@@ -70,15 +106,7 @@ class WKSRecordController: NSObject {
             request.predicate = NSPredicate(format: "name=%@", keyword!)
             
             // execute fetch objects
-            var error: NSError? = nil
-            if var objs = context.executeFetchRequest(request, error: &error) {
-                for obj in objs {
-                    let object = obj as WKSBookedAirportShop
-
-                    // stack find object
-                    findObjects.append(object)
-                }
-            }
+            findObjects = executeFetch(request)!
         }
         
         return findObjects

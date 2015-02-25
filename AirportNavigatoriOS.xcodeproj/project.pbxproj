@@ -46,6 +46,10 @@
 		B5C483D61A83926500CCBFED /* WKSAirportListMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C483D41A83926500CCBFED /* WKSAirportListMaker.swift */; };
 		B5F51C991A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */; };
 		B5F51C9A1A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */; };
+		B5F51CA51A9DF8150035DE7C /* WKSBookedAirportShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51CA41A9DF8150035DE7C /* WKSBookedAirportShopController.swift */; };
+		B5F51CA61A9DF8150035DE7C /* WKSBookedAirportShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51CA41A9DF8150035DE7C /* WKSBookedAirportShopController.swift */; };
+		B5F51CAF1A9E02350035DE7C /* WKSBookedAirportShopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51CAE1A9E02350035DE7C /* WKSBookedAirportShopTable.swift */; };
+		B5F51CB01A9E02350035DE7C /* WKSBookedAirportShopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F51CAE1A9E02350035DE7C /* WKSBookedAirportShopTable.swift */; };
 		B5FF481B1A8393DC00A34A68 /* Airport.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481A1A8393DC00A34A68 /* Airport.plist */; };
 		B5FF481C1A8393DC00A34A68 /* Airport.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481A1A8393DC00A34A68 /* Airport.plist */; };
 		B5FF481E1A8393E800A34A68 /* AirportTerminal.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FF481D1A8393E800A34A68 /* AirportTerminal.plist */; };
@@ -165,6 +169,8 @@
 		B5C483C91A838E9600CCBFED /* AirportNavigatoriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportNavigatoriOSTests.swift; sourceTree = "<group>"; };
 		B5C483D41A83926500CCBFED /* WKSAirportListMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSAirportListMaker.swift; sourceTree = "<group>"; };
 		B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSBookedAirportShopViewController.swift; sourceTree = "<group>"; };
+		B5F51CA41A9DF8150035DE7C /* WKSBookedAirportShopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSBookedAirportShopController.swift; sourceTree = "<group>"; };
+		B5F51CAE1A9E02350035DE7C /* WKSBookedAirportShopTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSBookedAirportShopTable.swift; sourceTree = "<group>"; };
 		B5FF481A1A8393DC00A34A68 /* Airport.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Airport.plist; sourceTree = "<group>"; };
 		B5FF481D1A8393E800A34A68 /* AirportTerminal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirportTerminal.plist; sourceTree = "<group>"; };
 		B5FF48211A839A0000A34A68 /* WKSAirport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKSAirport.swift; sourceTree = "<group>"; };
@@ -296,6 +302,7 @@
 				B5A441EB1A876B07004795A1 /* WKSAirportShopController.swift */,
 				B581569B1A8CEBAB00112FA3 /* WKSAirportShopItemController.swift */,
 				B562120E1A9B70C600981784 /* WKSRecordController.swift */,
+				B5F51CA41A9DF8150035DE7C /* WKSBookedAirportShopController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 				B59BDDBB1A8902CD00D7E32C /* ShopDetailViewController.swift */,
 				B59BDDD01A8CE1CB00D7E32C /* WKSAirportShopItemTable.swift */,
 				B5F51C981A9CC48F0035DE7C /* WKSBookedAirportShopViewController.swift */,
+				B5F51CAE1A9E02350035DE7C /* WKSBookedAirportShopTable.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -501,6 +509,7 @@
 				B5FF48261A83A0A900A34A68 /* WKSAirportPicker.swift in Sources */,
 				B55F24A61A871E370040C4AA /* WKSNotificationInfo.swift in Sources */,
 				B59BDDD11A8CE1CB00D7E32C /* WKSAirportShopItemTable.swift in Sources */,
+				B5F51CA51A9DF8150035DE7C /* WKSBookedAirportShopController.swift in Sources */,
 				B59BDDC91A8B96FC00D7E32C /* WKSViewLayout.swift in Sources */,
 				B5FF48291A83AF8500A34A68 /* WKSViewIndicator.swift in Sources */,
 				B5FF48361A86F13C00A34A68 /* WKSTerminalTable.swift in Sources */,
@@ -515,6 +524,7 @@
 				B5C483D51A83926500CCBFED /* WKSAirportListMaker.swift in Sources */,
 				B5FF482F1A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift in Sources */,
 				B55F24B61A8763550040C4AA /* WKSShopCollection.swift in Sources */,
+				B5F51CAF1A9E02350035DE7C /* WKSBookedAirportShopTable.swift in Sources */,
 				B5C483B41A838E9600CCBFED /* AppDelegate.swift in Sources */,
 				B562120C1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */,
 			);
@@ -531,6 +541,7 @@
 				B55F24A71A871E370040C4AA /* WKSNotificationInfo.swift in Sources */,
 				B5A442151A8778C0004795A1 /* WKSServerInfo.swift in Sources */,
 				B5A4423E1A8788F0004795A1 /* WKSAirportShop.swift in Sources */,
+				B5F51CA61A9DF8150035DE7C /* WKSBookedAirportShopController.swift in Sources */,
 				B5FF48271A83A0A900A34A68 /* WKSAirportPicker.swift in Sources */,
 				B5A441ED1A876B07004795A1 /* WKSAirportShopController.swift in Sources */,
 				B55F24B71A8763550040C4AA /* WKSShopCollection.swift in Sources */,
@@ -545,6 +556,7 @@
 				B59BDDCA1A8B96FC00D7E32C /* WKSViewLayout.swift in Sources */,
 				B59BDDBD1A8902CD00D7E32C /* ShopDetailViewController.swift in Sources */,
 				B5C483CA1A838E9600CCBFED /* AirportNavigatoriOSTests.swift in Sources */,
+				B5F51CB01A9E02350035DE7C /* WKSBookedAirportShopTable.swift in Sources */,
 				B5FF48301A83B40B00A34A68 /* WKSAirportTerminalListMaker.swift in Sources */,
 				B562120D1A9B67A500981784 /* WKSBookedAirportShop.swift in Sources */,
 			);

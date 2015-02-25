@@ -10,7 +10,7 @@ import UIKit
 
 class WKSBookedAirportShopViewController: UIViewController {
     // MARK: Properties
-    
+    private var bookedAirportShopController: WKSBookedAirportShopController?
     
     // MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +24,9 @@ class WKSBookedAirportShopViewController: UIViewController {
     // MARK: View
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // setup table View
+        bookedAirportShopController = WKSBookedAirportShopController(shoptableView: tableView)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

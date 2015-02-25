@@ -111,7 +111,7 @@ class ShopDetailViewController: UIViewController {
                 // setup record object
                 let record = WKSRecordController(entityName: "WKSBookedAirportShop")
                 let objs = record.findEntity(self.airportShop?.shop?.name)
-                
+                                
                 if objs.count == 0 { // not exist in database
                     
                     // create new entity
