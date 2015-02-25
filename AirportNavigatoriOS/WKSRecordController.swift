@@ -111,6 +111,30 @@ class WKSRecordController: NSObject {
         
         return findObjects
     }
+    
+    // MARK: delete object
+    func deleteEntity(keyword: String?){
+        // fetch
+        if let context = self.context {
+            let entityDescription = NSEntityDescription.entityForName(entityname!, inManagedObjectContext: context)
+            
+            // make request
+            let request = NSFetchRequest()
+            request.entity = entityDescription
+            
+            // make prediction phrase
+            request.predicate = NSPredicate(format: "name=%@", keyword!)
+            
+            // execute fetch objects
+            var error: NSError? = nil
+            if var objs = context.executeFetchRequest(request, error: &error) {
+                for obj in objs {
+                    let entity = obj as WKSBookedAirportShop
+                    context.deleteObject(entity)
+                }
+            }
+        }
+    }
 
     // MARK: save context
     func saveEntity(){

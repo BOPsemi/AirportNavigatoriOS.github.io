@@ -71,5 +71,18 @@ class WKSBookedAirportShopTable: UITableView,
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        // performance
+        if editingStyle == .Delete {
+            // remove object
+            items.removeAtIndex(indexPath.row)
+            
+            // update view
+            tableView.reloadData()
+        }
+        
+        
+    }
     
 }
